@@ -1,0 +1,28 @@
+.meal-banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media screen and (max-width: 860px) {
+    .meal-banner-container {
+        flex-wrap: wrap;
+    }
+}
+
+.meal-banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.meal-banner-photo img {
+    max-height: 350px;
+}

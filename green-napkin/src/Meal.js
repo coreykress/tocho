@@ -95,7 +95,7 @@ class Meal extends Component {
                 <div className="meal-title">
                     <h1>{ this.state.name }</h1>
                     <p>{ this.state.time }</p>
-                    <p>{ this.state.description }</p>
+                    <p className="meal-description-text">{ this.state.description }</p>
                 </div>
                 <div className="meal-select">
                     <div className="meal-quantities-selector">
