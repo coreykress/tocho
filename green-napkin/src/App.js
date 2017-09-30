@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Main from './Main';
 
 class App extends Component {
     constructor(props) {
@@ -10,13 +11,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Green Napkin</h1>
+          <h1 className="App-title">Tonight&#39;s Choice</h1>
           <button className="App-Login">Login</button>
         </header>
+
         <div className="App-body">
-            <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
+            <Main />
         </div>
       </div>
     );
