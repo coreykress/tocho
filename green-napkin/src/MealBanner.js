@@ -23,15 +23,17 @@ class MealBanner extends Component {
 
     render() {
         return (
-            <div className="meal-banner-container">
+            <div className="meal-banner-container yellow">
                 <div className="meal-banner-photo">
                     { this.getImageSrc() }
                 </div>
                 <div className="meal-banner-info">
-                    <h3> {this.state.name} </h3>
+                    <h3 className="main-text"> {this.state.name} </h3>
                     <p> {this.state.description} </p>
-                    <div className="button-container">
-                        <Link to={'meals/1'}>TEST</Link>
+                    <div className="button-container-container">
+                        <div className="button-container orange">
+                            <Link className="meal-button-text body-text" to={'meals/1'}>SEE FULL RECIPIE</Link>
+                            </div>
                     </div>
                 </div>
             </div>

@@ -65,7 +65,7 @@ class Meal extends Component {
         return (
             <ol className="meal-list meal-instructions-list">
                 {this.state.recipie.map(function (item, i) {
-                    var classId = i % 2 === 0 ? 'ev-shade' : 'od-shade';
+                    var classId = i % 2 === 0 ? 'ev-shade body-text' : 'od-shade body-text';
                     return <li key={i} className={classId} >{item}</li>
                 })}
             </ol>);
@@ -75,7 +75,7 @@ class Meal extends Component {
         return (
             <ul className="meal-list meal-ingredients-list">
                 { this.state.ingredients.map(function (item, i) {
-                    return <li key={i} >{item.name} - {item.quantity * this.state.servings}</li>
+                    return <li key={i} className='body-text' >{item.name} - {item.quantity * this.state.servings}</li>
                 }.bind(this)) }
             </ul>);
     }
@@ -91,9 +91,10 @@ class Meal extends Component {
     render() {
         return (
           <div className="meal-container">
+          <div className="meal-primary-info">
             <div className="meal-info">
                 <div className="meal-title">
-                    <h1>{ this.state.name }</h1>
+                    <h1 className="main-text">{ this.state.name }</h1>
                     <p>{ this.state.time }</p>
                     <p className="meal-description-text">{ this.state.description }</p>
                 </div>
@@ -119,11 +120,12 @@ class Meal extends Component {
             <div className="meal-photo">
                 { this.getImageSrc() }
             </div>
+            </div>
             <div className="meal-ingredients">
-                <h3 className="section-header">Ingredients</h3>
+                <h3 className="section-header main-text">Ingredients</h3>
                 { this.listIngredients() }
             </div>
-            <div className="meal-instructions">
+            <div className="meal-instructions main-text">
                 <h3 className="selection-header">Instructions</h3>
                 { this.listInstructions() }
             </div>

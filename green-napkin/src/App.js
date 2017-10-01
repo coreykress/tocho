@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import background from './speckle-backgroud.png';
 import './App.css';
 import Main from './Main';
 
@@ -7,12 +7,15 @@ class App extends Component {
     constructor(props) {
         super(props);
     }
+
+    
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Tonight&#39;s Choice</h1>
-          <button className="App-Login">Login</button>
+        <header className="App-header tan blue-text">
+          <img className="app-logo-icon" src={process.env.PUBLIC_URL + '/tc_logo-blue_1024.png'} />
+          <div className="app-login body-text blue"><p>Login</p></div>
         </header>
 
         <div className="App-body">

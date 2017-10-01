@@ -2,13 +2,18 @@
     max-width: 200px;
 }
 .mini-go-to-button{
-    background-color: red;
+    color: #fff;
     border-radius: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
     padding-left: 10px;
 }
+
+.mini-go-to-button:hover {
+    opacity: .5;
+}
+
 .mini-meal-container {
     margin-right: 20px;
     margin-left: 20px;

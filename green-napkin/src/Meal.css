@@ -5,8 +5,22 @@
     flex-wrap: wrap;
 }
 
+.meal-primary-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1120px) {
+    .meal-primary-info {
+        justify-content: center;
+    }
+}
+
 .meal-info {
-    width:100%;
+    max-width: 550px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
