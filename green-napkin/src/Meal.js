@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import './Meal.css';
 import MealApi from './test/MealApi';
+import { Link } from 'react-router-dom';
 
 class Meal extends Component {
     constructor(props) {
         super(props);
+         window.scrollTo(0, 0);
 
         this.state = {
                 number: 1,
@@ -85,40 +87,43 @@ class Meal extends Component {
     }
 
     getImageSrc() {
-        return <img src={process.env.PUBLIC_URL + '/images/' + this.state.photo} />;
+        return <img className="meal-photo" src={process.env.PUBLIC_URL + '/images/' + this.state.photo} />;
     }
 
     render() {
         return (
           <div className="meal-container">
-          <div className="meal-primary-info">
-            <div className="meal-info">
-                <div className="meal-title">
-                    <h1 className="main-text">{ this.state.name }</h1>
-                    <p>{ this.state.time }</p>
-                    <p className="meal-description-text">{ this.state.description }</p>
-                </div>
-                <div className="meal-select">
-                    <div className="meal-quantities-selector">
-                    <span>Servings: </span>
-                    <select onChange={this.onServingChange.bind(this)}>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                    </select>
+          <div className="meal-photo-info">
+              <div className="meal-primary-info yellow">
+                <div className="meal-info">
+                    <div className="meal-title">
+                        <h1 className="main-text">{ this.state.name }</h1>
+                        <p>{ this.state.time }</p>
+                        <p className="meal-description-text">{ this.state.description }</p>
                     </div>
+                    <div className="meal-select">
+                        <div className="meal-quantities-selector">
+                        <span>Servings: </span>
+                        <select onChange={this.onServingChange.bind(this)}>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        </div>
 
-                    <div className="meal-order-button">
-                        ORDER NOW
+                        <div className="button-container-container">
+                            <div className="button-container orange">
+                                <Link className="meal-button-text body-text" to={'/order'}>ORDER NOW</Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div className="meal-photo">
-                { this.getImageSrc() }
+                <div className="meal-photo">
+                    { this.getImageSrc() }
+                </div>
             </div>
             </div>
             <div className="meal-ingredients">
@@ -126,7 +131,7 @@ class Meal extends Component {
                 { this.listIngredients() }
             </div>
             <div className="meal-instructions main-text">
-                <h3 className="selection-header">Instructions</h3>
+                <h3 className="section-header">Instructions</h3>
                 { this.listInstructions() }
             </div>
           </div>

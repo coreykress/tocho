@@ -72,7 +72,7 @@ p {
 }
 
 .app-logo-icon {
-    max-width: 90px;
+    max-height: 65px;
 }
 
 @keyframes App-logo-spin {

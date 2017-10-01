@@ -1,0 +1,24 @@
+.order-form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.order-delivery-choice-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.select-button {
+    background-color: #E66038;
+    color: #fff;
+    font-family: 'Open Sans';
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.select-button:hover {
+    opacity: .5;
+}

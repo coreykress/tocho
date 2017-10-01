@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './Home.css';
 import './MealBanner.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 
 class MealBanner extends Component {
@@ -33,7 +33,7 @@ class MealBanner extends Component {
                     <div className="button-container-container">
                         <div className="button-container orange">
                             <Link className="meal-button-text body-text" to={'meals/1'}>SEE FULL RECIPIE</Link>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
