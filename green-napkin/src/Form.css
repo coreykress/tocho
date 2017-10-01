@@ -1,3 +1,12 @@
 .form-body {
-    /*width:50%;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pick-up-form-container {
+    width: 700px;
+}
+
+.form-input {
+    width: 50%;
 }

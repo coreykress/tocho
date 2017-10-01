@@ -13,6 +13,7 @@
 
 .home-upcoming-meals-text {
     margin-top: 50px;
+    letter-spacing: 2px;
 }
 
 .home-banner-image {
@@ -30,9 +31,9 @@
 
 .home-banner-text-container {
     display: inline-block;
-    position: absolute;               /* remove from document flow */
-    left: 80%;                        /* center horizontally */
-    top: 60%;                         /* center vertically */
+    position: absolute;
+    left: 80%;
+    top: 60%;
     transform: translate(-50%,-50%)
 }
 
@@ -44,13 +45,19 @@
 }
 
 .home-drawing-banner {
-    max-height: 250px;
+    max-height: 270px;
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+        margin-left: 60px;
+        margin-right: 60px;
     justify-content: space-around;
 }
 
 .home-drawing-banner img {
     width: -webkit-fill-available;
+}
+
+.left-title-text {
+    letter-spacing: 2px;
 }

@@ -21,11 +21,11 @@ class PickupForm extends Component {
                 <div className="form-body yellow">
                     <form>
                     <h4 className="main-text">Name:</h4>
-                        <input type="text" value="Name"/>
+                        <input className="form-input" type="text"/>
                     <h4 className="main-text">Phone:</h4>
-                        <input type="tel" />
-                    <h4 className="main-text">Order Now!</h4>
-                        <input type="submit" value="Order"/>
+                        <input className="form-input" type="tel" />
+                    <h4 className="main-text">Go To Payment</h4>
+                        <input type="submit" value="Payment"/>
                     </form>
                 </div>
             </div>

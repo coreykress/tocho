@@ -27,7 +27,7 @@ class Home extends Component {
                     <h2 className="left-title-text main-text">Tonight&#39;s Choice</h2>
                     <MealBanner />
                 </div>
-                <h3 className="home-upcoming-meals-text body-text">Upcoming Meals</h3>
+                <h3 className="home-upcoming-meals-text main-text">Upcoming Meals</h3>
                 <div className="home-upcoming-meals">
                     <MiniMeal
                         photo="925_2PP_Half-Chicken_82663_WEB_SQ_main_square_2x.jpg"
