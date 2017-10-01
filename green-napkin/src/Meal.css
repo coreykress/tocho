@@ -1,9 +1,9 @@
 .meal-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-right: 10px;
+    margin: 20px;
 }
 
 .meal-primary-info {
@@ -11,7 +11,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -45,14 +45,35 @@
     margin-bottom: 10px;
 }
 
+.meal-instructions .ev-shade {
+    background-color: rgba(254,217,141 0.5);
+}
+
 .meal-instructions .od-shade {
-    background-color: #E0E2E1;
+    background-color: rgba(224,226,225, 0.5);
+}
+
+.meal-ingredients {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 .meal-ingredients-list {
+    width: auto;
     list-style-type: none;
     margin: 0 0 3px 0;
     text-align: left;
+}
+
+.meal-instructions-list {
+    list-style-type: none;
+    padding-left: 0px
+}
+
+.meal-instructions-list li {
+    /*margin-bottom: 50px;*/
+    padding: 10px;
 }
 
 .meal-select {
@@ -104,4 +125,19 @@
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.ingredient-photo {
+    width: 90%;
+    max-height: 400px;
+}
+
+.meal-item-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section-header {
+    letter-spacing: 3px;
 }

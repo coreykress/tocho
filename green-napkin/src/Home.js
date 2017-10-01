@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MealBanner from './MealBanner';
 import MiniMeal from './MiniMeal';
+import DrawingContainer from './DrawingContainer';
 import './App.css';
 import './Home.css';
 
@@ -18,6 +19,9 @@ class Home extends Component {
                         <h3 className="home-banner-text body-text"><span>Fresh meal ingredients </span></h3>
                         <h3 className="home-banner-text body-text"><span>prepared for you, every day</span></h3>
                     </div>
+                </div>
+                <div className="home-drawing-banner">
+                    <img src={process.env.PUBLIC_URL + '/tocho_draw_line-01.png'} />
                 </div>
                 <div className="home-today-meal">
                     <h2 className="left-title-text main-text">Tonight&#39;s Choice</h2>

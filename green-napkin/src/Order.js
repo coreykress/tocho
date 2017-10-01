@@ -16,7 +16,7 @@ class Order extends Component {
     }
 
     handleChange() {
-        return;
+        return ;
     }
 
     setDelivery() {
